@@ -7,6 +7,9 @@
     discord
     steam
 
+    vlc
+    qbittorrent
+
     git
     lazygit
     vim
