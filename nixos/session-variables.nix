@@ -1,5 +1,5 @@
 {
   environment.sessionVariables = {
-    FLAKE = "/home/ralf2oo2/nix/";
+    FLAKE = "/home/ralf2oo2/nixos/";
   };
 }
