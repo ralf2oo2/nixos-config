@@ -7,11 +7,9 @@
     displayManager.defaultSession = "xfce";
   };
 
-  environment = {
-    systemPackages = with pkgs; [
-      xfce.xfce4-docklite-plugin
-    ];
-  };
+  environment.systemPackages = [
+    pkgs.xfce.xfce4-docklike-plugin
+  ];
 
   programs = {
     dconf.enable = true;
