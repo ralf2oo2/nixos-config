@@ -9,7 +9,7 @@
 
   environment = {
     systemPackages = with pkgs; [
-      xfce4-docklite-plugin
+      xfce.xfce4-docklite-plugin
     ];
   };
 
