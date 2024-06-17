@@ -7,8 +7,11 @@
     displayManager.defaultSession = "xfce";
   };
 
-  environment.systemPackages = [
-    pkgs.xfce.xfce4-docklike-plugin
+  environment.systemPackages = with pkgs; [
+    xfce.xfce4-docklike-plugin
+    xfce.xfce4-whiskermenu-plugin
+    xfce.xfce4-pulseaudio-plugin
+    ulauncher
   ];
 
   programs = {
