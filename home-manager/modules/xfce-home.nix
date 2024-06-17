@@ -7,7 +7,7 @@
       package = pkgs.papirus-icon-theme;
     };
     theme = {
-      name = "Tokyonight-B-LB";
+      name = "Tokyonight-Dark-B-LB";
       package = pkgs.tokyonight-gtk-theme;
     };
     gtk3.extraConfig = {
