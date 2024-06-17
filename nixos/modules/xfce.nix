@@ -34,7 +34,7 @@
       xfce.xfce4-weather-plugin
       xfce.xfce4-whiskermenu-plugin
       xfce.xfce4-xkb-plugin
-      xfce.xfce4-docklite-plugin
+      xfce4-docklite-plugin
       xfce.xfdashboard
       xorg.xev
       xsel
