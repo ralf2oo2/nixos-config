@@ -1,6 +1,6 @@
 {
 	imports = [
     ./git.nix
-    ./xfce-home.nix
+    ./xfce/xfce-home.nix
 	];
 }
