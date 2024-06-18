@@ -2,7 +2,13 @@
 {
   imports = [
     ./css.nix
+    ./glava.nix
   ];
+
+  home.packages = with pkgs; [
+    meslo-lgs-nf
+  ];
+
   gtk = {
     enable = true;
     iconTheme = {
@@ -15,6 +21,14 @@
       name = "Qogir-Dark";
       package = pkgs.qogir-theme;
     };
+    cursorTheme = {
+      name = "OpenZone_Fire_Slim";
+      package = pkgs.openzone-cursors;
+    };
+    font = {
+      name = "Roboto 9";
+      package = pkgs.roboto;
+    };
     gtk3.extraConfig = {
       Settings = ''
         gtk-application-prefer-dark-theme=1
@@ -25,6 +39,12 @@
         gtk-application-prefer-dark-theme=1
       '';
     };
+  };
+  home.pointerCursor = {
+    name = "OpenZone_Fire_Slim";
+    package = pkgs.openzone-cursors;
+    x11.enable = true;
+    gtk.enable = true;
   };
   xfconf.settings = {
     xfce4-panel = {
@@ -71,6 +91,16 @@
 			"plugins/plugin-7/show-seconds" = false;
 			
 			"plugins/plugin-8" = "notification-plugin";
+    };
+    xfwm4 = {
+      "general/theme" = "Qogir-Dark";
+      "general/title_font" = "Roboto Bold 11";
+      "general/title_alignment" = "center";
+    };
+    xsettings = {
+      "Gtk/FontName" = "Roboto 10";
+      "Gtk/MonospaceFontName" = "MesloLGS NF 10";
+
     };
   };
 
