@@ -1,5 +1,8 @@
 { config, pkgs, lib, ... }:
 {
+  imports = [
+    ./css.nix
+  ];
   gtk = {
     enable = true;
     iconTheme = {

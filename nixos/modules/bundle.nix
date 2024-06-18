@@ -6,6 +6,7 @@
     ./sound.nix
     ./bluetooth.nix
     ./xfconf.nix
+    ./nvidia.nix
     ./nixvim/nixvim.nix
 	];
 }
