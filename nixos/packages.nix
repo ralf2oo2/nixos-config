@@ -20,6 +20,7 @@
     nvd
 
 	killall
+	gparted
 	home-manager
 	];
 
