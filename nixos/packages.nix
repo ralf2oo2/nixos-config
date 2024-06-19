@@ -19,7 +19,8 @@
     nix-output-monitor
     nvd
 
-	  home-manager
+	killall
+	home-manager
 	];
 
 	fonts.packages = with pkgs; [
