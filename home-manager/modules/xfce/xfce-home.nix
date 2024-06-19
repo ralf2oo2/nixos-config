@@ -99,6 +99,7 @@
       "general/theme" = "Qogir-Dark";
       "general/title_font" = "Roboto Bold 11";
       "general/title_alignment" = "center";
+      "general/use_compositing" = false;
     };
     xsettings = {
       "Gtk/FontName" = "Roboto 10";
