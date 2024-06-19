@@ -5,6 +5,7 @@
     ./glava.nix
     ./picom/picom.nix
     ./ulauncher/ulauncher.nix
+    ./conky/conky.nix
   ];
 
   home.packages = with pkgs; [
@@ -100,6 +101,7 @@
       "general/title_font" = "Roboto Bold 11";
       "general/title_alignment" = "center";
       "general/use_compositing" = false;
+      "general/raise_with_any_button" = false;
     };
     xsettings = {
       "Gtk/FontName" = "Roboto 10";
