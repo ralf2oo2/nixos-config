@@ -7,6 +7,7 @@
 
   home.packages = with pkgs; [
     meslo-lgs-nf
+    notepadqq
   ];
 
   gtk = {
