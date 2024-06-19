@@ -3,6 +3,8 @@
   imports = [
     ./css.nix
     ./glava.nix
+    ./picom/picom.nix
+    ./ulauncher/ulauncher.nix
   ];
 
   home.packages = with pkgs; [
