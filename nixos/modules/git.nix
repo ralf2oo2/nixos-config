@@ -2,8 +2,8 @@
 	programs.git = {
 		enable = true;
 		
-		extraConfig = {
-			credential.helper = "oauth"
+		config = {
+			credential.helper = "oauth";
 		};
 	};
 }
