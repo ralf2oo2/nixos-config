@@ -10,10 +10,10 @@
     vlc
     qbittorrent
 
-    git
     lazygit
     vim
     neofetch
+    git-credential-oauth
 
     nh
     nix-output-monitor

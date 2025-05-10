@@ -8,44 +8,32 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "usbhid" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/c073097f-025a-4ede-bf35-2b75215c2095";
+    { device = "/dev/disk/by-uuid/647679df-d542-4913-86a8-289fc956ac04";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/6B53-1C1C";
+    { device = "/dev/disk/by-uuid/715D-8655";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  fileSystems."/mnt/tmp" =
-    { device = "/dev/disk/by-uuid/c3203fbb-fec0-457c-bf60-7c632072db45";
-      fsType = "ext4";
-    };
-
-  fileSystems."/home" =
-    { device = "/mnt/tmp";
-      fsType = "none";
-      options = [ "bind" ];
-    };
-
-  swapDevices =
-    [ { device = "/dev/disk/by-uuid/fb69477c-e447-4b8c-85d5-87866fc4f06c"; }
-    ];
+  swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.eno1.useDHCP = lib.mkDefault true;
-  # networking.interfaces.wlo1.useDHCP = lib.mkDefault true;
+  # networking.interfaces.enp4s0.useDHCP = lib.mkDefault true;
+  # networking.interfaces.wlp0s20f0u5u1.useDHCP = lib.mkDefault true;
+  # networking.interfaces.wlp5s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
