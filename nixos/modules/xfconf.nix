@@ -1,3 +1,0 @@
-{
-  programs.xfconf.enable = true;
-}
