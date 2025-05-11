@@ -6,6 +6,7 @@
     ./picom/picom.nix
     ./ulauncher/ulauncher.nix
     ./conky/conky.nix
+    ./docklike/docklike.nix
   ];
 
   home.packages = with pkgs; [
@@ -62,6 +63,7 @@
       "panels/panel-1/length-adjust" = true;
       "panels/panel-1/mode" = 0;
       "panels/panel-1/nrows" = 1;
+      "panels/panel-1/output-name" = "Primary";
       "panels/panel-1/position" = "p=8;x=96;y=1055";
       "panels/panel-1/position-locked" = true;
       "panels/panel-1/size" = 46;
