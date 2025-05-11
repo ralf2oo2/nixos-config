@@ -1,4 +1,4 @@
-{
+{ inputs, pkgs, ... }: {
 	imports = [
 		inputs.spicetify-nix.homeManagerModules.default
 	];
@@ -12,6 +12,12 @@
 		
 		enabledExtensions = with spicePkgs.extensions; [
 			adblock
+			beautifulLyrics
+			betterGenres
+			copyToClipboard
 		];
+
+		theme = spicePkgs.themes.comfy;
+		colorScheme = "catppuccin-frappe";
 	};
 }

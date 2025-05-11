@@ -1,4 +1,4 @@
-{ inputs, ... }:{
+{ inputs, ... }: {
 	imports = [
 		./modules/bundle.nix
 	];

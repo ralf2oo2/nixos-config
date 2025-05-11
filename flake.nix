@@ -41,9 +41,9 @@
 		};
 
 		homeConfigurations.ralf2oo2 = home-manager.lib.homeManagerConfiguration {
-			pkgs = nixpkgs.legacyPackages.${system};
+			pkgs = import nixpkgs {inherit system; config.allowUnfree = true;};
 			modules = [ ./home-manager/home.nix ];
-			extraSpecialArgs = {inherit inputs;}
+			extraSpecialArgs = {inherit inputs;};
 		};
 	};
 
