@@ -21,7 +21,7 @@
 		};
 	};
 
-	outputs = { nixpkgs, nixpkgs-stable, home-manager, ... }@inputs: 
+	outputs = { nixpkgs, nixpkgs-stable, home-manager, spicetify-nix, ... }@inputs: 
 		let
 			system = "x86_64-linux";
 		in{
@@ -43,6 +43,7 @@
 		homeConfigurations.ralf2oo2 = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.${system};
 			modules = [ ./home-manager/home.nix ];
+			extraSpecialArgs = {inherit inputs;}
 		};
 	};
 

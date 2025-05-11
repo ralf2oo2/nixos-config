@@ -1,4 +1,4 @@
-{
+{ inputs, ... }:{
 	imports = [
 		./modules/bundle.nix
 	];
@@ -6,7 +6,7 @@
 		username = "ralf2oo2";
     homeDirectory = "/home/ralf2oo2";
 
-		stateVersion = "23.11";
+		stateVersion = "24.11";
   };
   fonts = {
     fontconfig.enable = true;

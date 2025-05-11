@@ -12,6 +12,6 @@
 		
 		enabledExtensions = with spicePkgs.extensions; [
 			adblock
-		]
-	}
+		];
+	};
 }
