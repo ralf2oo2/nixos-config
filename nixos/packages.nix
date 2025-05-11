@@ -7,6 +7,8 @@
     discord
     steam
 
+    libratbag
+
     vlc
     qbittorrent
 
@@ -34,4 +36,6 @@
 		powerline-symbols
 		pkgs.nerd-fonts.symbols-only
 	];
+
+	services.ratbagd.enable = true;
 }

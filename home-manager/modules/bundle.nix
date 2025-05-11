@@ -3,5 +3,6 @@
     ./git.nix
     ./programs.nix
     ./xfce/xfce-home.nix
+    ./spicetify/spicetify.nix
 	];
 }

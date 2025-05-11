@@ -54,7 +54,8 @@
   xfconf.settings = {
     xfce4-panel = {
       "configver" = 2;
-      "panels" = [1];
+      "panels" = [1 2];
+
       "panels/panel-1/background-style" = 0;
       "panels/panel-1/disable-struts" = false;
       "panels/panel-1/enter-opacity" = 80;
@@ -68,6 +69,20 @@
       "panels/panel-1/position-locked" = true;
       "panels/panel-1/size" = 46;
       "panels/panel-1/plugin-ids" = [1 2 3 4 5 6 7 8];
+
+      "panels/panel-2/background-style" = 0;
+      "panels/panel-2/disable-struts" = false;
+      "panels/panel-2/enter-opacity" = 80;
+      "panels/panel-2/leave-opacity" = 80;
+      "panels/panel-2/length" = 100;
+      "panels/panel-2/length-adjust" = true;
+      "panels/panel-2/mode" = 0;
+      "panels/panel-2/nrows" = 1;
+      "panels/panel-2/output-name" = "HDMI-1";
+      "panels/panel-2/position" = "p=8;x=96;y=1055";
+      "panels/panel-2/position-locked" = true;
+      "panels/panel-2/size" = 46;
+      "panels/panel-2/plugin-ids" = [2];
 
      	"plugins/plugin-1" = "whiskermenu";
 			"plugins/plugin-2" = "docklike";

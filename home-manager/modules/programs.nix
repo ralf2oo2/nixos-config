@@ -3,5 +3,7 @@
     prismlauncher
     haruna
     mpv
+    piper
+    solaar
   ];
 }
