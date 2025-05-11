@@ -8,5 +8,6 @@
     		./xfconf.nix
     		./nixvim/nixvim.nix
 		./git.nix
+		./nvidia.nix
 	];
 }
