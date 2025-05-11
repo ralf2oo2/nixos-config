@@ -11,7 +11,7 @@
     xfce.xfce4-docklike-plugin
     xfce.xfce4-whiskermenu-plugin
     xfce.xfce4-pulseaudio-plugin
-    gnome.file-roller
+    pkgs.file-roller
     ulauncher
   ];
 
