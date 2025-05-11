@@ -16,6 +16,6 @@
 
   i18n.defaultLocale = "en_US.UTF-8";
 
-  system.stateVersion = "23.11"; # Did you read the comment?
+  system.stateVersion = "24.11"; # Did you read the comment?
 }
 
