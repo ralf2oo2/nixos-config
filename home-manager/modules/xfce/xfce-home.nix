@@ -120,6 +120,7 @@
       "general/title_alignment" = "center";
       "general/use_compositing" = false;
       "general/raise_with_any_button" = false;
+      "general/wrap_windows" = false;
     };
     xsettings = {
       "Gtk/FontName" = "Roboto 10";
