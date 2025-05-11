@@ -71,6 +71,7 @@
       "panels/panel-1/plugin-ids" = [1 2 3 4 5 6 7 8];
 
       "panels/panel-2/background-style" = 0;
+      "panels/panel-2/autohide-behavior" = 0;
       "panels/panel-2/disable-struts" = false;
       "panels/panel-2/enter-opacity" = 80;
       "panels/panel-2/leave-opacity" = 80;

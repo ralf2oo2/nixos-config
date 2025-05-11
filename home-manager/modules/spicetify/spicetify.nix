@@ -15,6 +15,8 @@
 			beautifulLyrics
 			betterGenres
 			copyToClipboard
+			shuffle
+			volumePercentage
 		];
 
 		theme = spicePkgs.themes.comfy;
