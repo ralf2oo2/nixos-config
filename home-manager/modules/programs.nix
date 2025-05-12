@@ -8,5 +8,6 @@
     flameshot
     vscode-fhs
     jetbrains.idea-community
+    anki
   ];
 }
