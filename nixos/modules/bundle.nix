@@ -9,6 +9,5 @@
     ./nixvim/nixvim.nix
 		./git.nix
 		./nvidia.nix
-		./git-hooks.nix
 	];
 }

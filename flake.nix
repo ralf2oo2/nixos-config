@@ -19,9 +19,11 @@
 		spicetify-nix = {
 			url = "github:Gerg-L/spicetify-nix";
 		};
+
+		git-hooks.url = "github:cachix/git-hooks.nix";
 	};
 
-	outputs = { nixpkgs, nixpkgs-stable, home-manager, spicetify-nix, ... }@inputs: 
+	outputs = { nixpkgs, nixpkgs-stable, home-manager, spicetify-nix, git-hooks, ... }@inputs: 
 		let
 			system = "x86_64-linux";
 		in{
@@ -45,6 +47,23 @@
 			modules = [ ./home-manager/home.nix ];
 			extraSpecialArgs = {inherit inputs;};
 		};
+
+		checks = forAllSystems (system: {
+			pre-commit-check = inputs.pre-commit-hooks.lib.${system}.run {
+				src = ./.;
+				hooks = {
+					nixfmt-rfc-style.enable = true;
+				};
+			};
+    });
+
+		devShells = forAllSystems (system: {
+			default = nixpkgs.legacyPackages.${system}.mkShell {
+				inherit (self.checks.${system}.pre-commit-check) shellHook;
+				buildInputs = self.checks.${system}.pre-commit-check.enabledPackages;
+			};
+		});
+
 	};
 
 }
