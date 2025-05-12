@@ -7,5 +7,6 @@
     solaar
     flameshot
     vscode-fhs
+    jetbrains.idea-community
   ];
 }

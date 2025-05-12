@@ -59,7 +59,8 @@
         modules = [ ./home-manager/home.nix ];
         extraSpecialArgs = { inherit inputs; };
       };
-
+			
+			#doesn't seem to do anything
       devShells.${system}.default =
         let
           pre-commit-check = git-hooks.run {
