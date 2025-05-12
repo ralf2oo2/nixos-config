@@ -21,6 +21,8 @@
     nix-output-monitor
     nvd
 
+		nixfmt-rfc-style
+
 	killall
 	gparted
 	home-manager

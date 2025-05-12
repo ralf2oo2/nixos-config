@@ -5,5 +5,7 @@
     mpv
     piper
     solaar
+    flameshot
+    vscode-fhs
   ];
 }
