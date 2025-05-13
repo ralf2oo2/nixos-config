@@ -9,5 +9,9 @@
     vscode-fhs
     jetbrains.idea-community
     anki
+    thunderbird
+    krita
+    aseprite
+    chatterino7
   ];
 }

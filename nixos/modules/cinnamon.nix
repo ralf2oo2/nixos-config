@@ -2,10 +2,12 @@
 {
   services.xserver = {
     enable = true;
+    libinput.enable = true;
+    displayManager.lightdm.enable = true;
     desktopManager = {
-      xfce.enable = true;
+      cinnamon.enable = true;
     };
-    displayManager.defaultSession = "xfce";
+    displayManager.defaultSession = "cinnamon";
   };
 
   environment.systemPackages = with pkgs; [
@@ -17,19 +19,9 @@
   ];
 
   programs = {
-    dconf.enable = true;
     gnupg.agent = {
       enable = true;
       enableSSHSupport = true;
-    };
-
-    thunar = {
-      enable = true;
-      plugins = with pkgs.xfce; [
-        thunar-archive-plugin
-        thunar-media-tags-plugin
-        thunar-volman
-      ];
     };
   };
 }

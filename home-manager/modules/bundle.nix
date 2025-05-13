@@ -2,7 +2,8 @@
 	imports = [
     ./git.nix
     ./programs.nix
-    ./xfce/xfce-home.nix
+    #./xfce/xfce-home.nix
+    ./cinnamon/cinnamon-home.nix
     ./spicetify/spicetify.nix
 	];
 }
