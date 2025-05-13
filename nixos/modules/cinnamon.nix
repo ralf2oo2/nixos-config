@@ -11,9 +11,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    xfce.xfce4-docklike-plugin
-    xfce.xfce4-whiskermenu-plugin
-    xfce.xfce4-pulseaudio-plugin
     pkgs.file-roller
     ulauncher
   ];
