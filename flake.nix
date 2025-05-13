@@ -50,7 +50,6 @@
           inputs.nixvim.nixosModules.nixvim
         ];
       };
-
       homeConfigurations.ralf2oo2 = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
           inherit system;
@@ -59,8 +58,8 @@
         modules = [ ./home-manager/home.nix ];
         extraSpecialArgs = { inherit inputs; };
       };
-			
-			#doesn't seem to do anything
+
+      #doesn't seem to do anything
       devShells.${system}.default =
         let
           pre-commit-check = git-hooks.run {
