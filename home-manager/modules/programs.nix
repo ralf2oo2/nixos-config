@@ -13,5 +13,6 @@
     krita
     aseprite
     chatterino7
+    dconf-editor
   ];
 }
