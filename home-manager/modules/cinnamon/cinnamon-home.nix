@@ -3,6 +3,7 @@
 
   imports = [
     ./dconf.nix
+    ./gtk.nix
   ];
 
   programs.gpg.enable = true;
