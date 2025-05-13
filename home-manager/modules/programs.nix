@@ -14,5 +14,6 @@
     aseprite
     chatterino7
     dconf-editor
+    mission-center
   ];
 }

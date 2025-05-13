@@ -20,6 +20,23 @@
         name = "Qogir-Dark";
       };
 
+      "org/cinnamon/desktop/keybindings/media-keys" = {
+        screenshot = [];
+        screenshot-clip = [];
+        area-screenshot = [];
+        area-screenshot-clip = [];
+        window-screenshot = [];
+        window-screenshot-clip = [];
+      };
+      "org/cinnamon/desktop/keybindings" = {
+        custom-list = ["custom0"];
+      };
+      "org/cinnamon/desktop/keybindings/custom-keybindings/custom0" = {
+        name = "screenshot";
+        command = "flameshot gui";
+        binding = ["<Primary>Print"];
+      };
+
       "org/cinnamon" = {
         enabled-applets = [
           "panel1:left:0:menu@cinnamon.org:0"
