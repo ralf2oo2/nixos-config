@@ -1,4 +1,6 @@
-gtk = {
+{ pkgs, ... }: {
+  home.sessionVariables.GTK_THEME = "Qogir-Dark";
+  gtk = {
     enable = true;
     iconTheme = {
       name = "Papirus-Dark";
@@ -27,3 +29,4 @@ gtk = {
       '';
     };
   };
+}

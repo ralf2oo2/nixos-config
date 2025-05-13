@@ -5,6 +5,21 @@
   dconf = {
     enable = true;
     settings = {
+
+      "org/cinnamon/desktop/interface" = {
+        cursor-theme = "OpenZone_Fire_Slim";
+        gtk-theme = "Qogir-Dark";
+        icon-theme = "Papirus-Dark";
+      };
+      "org/gnome/desktop/interface" = {
+        cursor-theme = "OpenZone_Fire_Slim";
+        gtk-theme = "Qogir-Dark";
+        icon-theme = "Papirus-Dark";
+      };
+      "org/cinnamon/theme" = {
+        name = "Qogir-Dark";
+      };
+
       "org/cinnamon" = {
         enabled-applets = [
           "panel1:left:0:menu@cinnamon.org:0"
