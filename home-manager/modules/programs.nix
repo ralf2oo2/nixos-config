@@ -16,5 +16,6 @@
     dconf-editor
     mission-center
     ventoy-full-gtk
+    hardinfo2
   ];
 }
