@@ -15,5 +15,6 @@
     chatterino7
     dconf-editor
     mission-center
+    ventoy-full-gtk
   ];
 }

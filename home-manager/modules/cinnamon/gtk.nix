@@ -1,5 +1,14 @@
 { pkgs, ... }: {
   home.sessionVariables.GTK_THEME = "Qogir-Dark";
+  
+  home.sessionVariables = {
+    XCURSOR_THEME = "OpenZone_Fire_Slim";
+  };
+  home.file.".icons/default/index.theme".text = ''
+    [Icon Theme]
+    Inherits=OpenZone_Fire_Slim
+  '';
+
   gtk = {
     enable = true;
     iconTheme = {

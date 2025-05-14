@@ -5,5 +5,6 @@
     #./xfce/xfce-home.nix
     ./cinnamon/cinnamon-home.nix
     ./spicetify/spicetify.nix
+    ./emulators/emulators-bundle.nix
 	];
 }
