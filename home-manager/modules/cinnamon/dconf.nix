@@ -55,6 +55,7 @@
           "panel1:right:11:cornerbar@cinnamon.org:14"
           "panel1:right:10:calendar@cinnamon.org:17"
           "panel2:left:0:grouped-window-list@cinnamon.org:15"
+          "panel2:right:0:calendar@cinnamon.org:18"
         ];
 
         panels-autohide = [
