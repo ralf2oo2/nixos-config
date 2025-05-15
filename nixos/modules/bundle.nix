@@ -10,5 +10,6 @@
 		./git.nix
 		./nvidia.nix
 		./cinnamon.nix
+		./steam.nix
 	];
 }

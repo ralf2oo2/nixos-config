@@ -1,11 +1,11 @@
-{ pkgs, ... }: {
-	nixpkgs.config = {
-		allowUnfree = true;
-	};
-	environment.systemPackages = with pkgs; [
+{ pkgs, inputs, ... }:
+{
+  nixpkgs.config = {
+    allowUnfree = true;
+  };
+  environment.systemPackages = with pkgs; [
     firefox
     discord
-    steam
 
     libratbag
 
@@ -21,39 +21,51 @@
     nix-output-monitor
     nvd
 
-		nixfmt-rfc-style
+    nixfmt-rfc-style
+    nixd
 
-	killall
-	gparted
-	home-manager
+    killall
+    gparted
+    home-manager
 
-	xorg.libXxf86vm
-	];
+    xorg.libXxf86vm
+  ];
 
-	fonts = {
-		packages = with pkgs; [
-			jetbrains-mono
-			noto-fonts
-			noto-fonts-emoji
-			twemoji-color-font
-			font-awesome
-			powerline-fonts
-			powerline-symbols
-			nerd-fonts.symbols-only
-			mplus-outline-fonts.osdnRelease # japanese font
-			roboto
-		];
+  nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
 
-		fontconfig = {
-			defaultFonts = {
-				serif = [  "Roboto 9" "M+ 1mn" ];
-				sansSerif = [ "Roboto 9" "M+ 1mn" ];
-				monospace = [ "Jetbrains Mono" "M+ 1c"];
-			};
-  	};
+  fonts = {
+    packages = with pkgs; [
+      jetbrains-mono
+      noto-fonts
+      noto-fonts-emoji
+      twemoji-color-font
+      font-awesome
+      powerline-fonts
+      powerline-symbols
+      nerd-fonts.symbols-only
+      mplus-outline-fonts.osdnRelease # japanese font
+      roboto
+    ];
 
-		fontDir.enable = true;
-	};
+    fontconfig = {
+      defaultFonts = {
+        serif = [
+          "Roboto 9"
+          "M+ 1mn"
+        ];
+        sansSerif = [
+          "Roboto 9"
+          "M+ 1mn"
+        ];
+        monospace = [
+          "Jetbrains Mono"
+          "M+ 1c"
+        ];
+      };
+    };
 
-	services.ratbagd.enable = true;
+    fontDir.enable = true;
+  };
+
+  services.ratbagd.enable = true;
 }
