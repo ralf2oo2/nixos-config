@@ -11,5 +11,6 @@
 		./nvidia.nix
 		./cinnamon.nix
 		./steam.nix
+		./java.nix
 	];
 }
