@@ -1,16 +1,17 @@
 {
-	imports = [
-		./bootloader.nix
-		./user.nix
+  imports = [
+    ./bootloader.nix
+    ./user.nix
     #./xfce.nix
     ./sound.nix
     ./bluetooth.nix
     #./xfconf.nix
     ./nixvim/nixvim.nix
-		./git.nix
-		./nvidia.nix
-		./cinnamon.nix
-		./steam.nix
-		./java.nix
-	];
+    ./git.nix
+    ./nvidia.nix
+    ./cinnamon.nix
+    ./steam.nix
+    ./java.nix
+	./filesystem.nix
+  ];
 }

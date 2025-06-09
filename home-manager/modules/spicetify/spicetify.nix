@@ -14,7 +14,6 @@
 			adblock
 			beautifulLyrics
 			betterGenres
-			copyToClipboard
 			shuffle
 			volumePercentage
 		];

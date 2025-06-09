@@ -29,6 +29,8 @@
     home-manager
 
     xorg.libXxf86vm
+    
+    nodejs
   ];
 
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];

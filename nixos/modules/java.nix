@@ -1,6 +1,8 @@
 {pkgs, ...}: {
-  systemPackages = with pkgs; [ jdk17 ];
-  etc = with pkgs; {
-    "jdk17".source = jdk17;
+  environment = {
+    systemPackages = with pkgs; [ jdk17 ];
+    etc = with pkgs; {
+      "jdk17".source = jdk17;
+    };
   };
 }

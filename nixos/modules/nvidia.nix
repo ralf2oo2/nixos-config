@@ -2,8 +2,8 @@
   # Enable OpenGL
   hardware.graphics = {
     enable = true;
+    enable32Bit = true;
     extraPackages = with pkgs; [ nvidia-vaapi-driver ];
-    
   };
 
   # Load nvidia driver for Xorg and Wayland
@@ -13,7 +13,7 @@
     modesetting.enable = true;
     powerManagement.enable = false;
     powerManagement.finegrained = false;
-    open = false;
+    open = true;
 
     # Enable the nvidia settings menu, accessable via nvidia-settings
     nvidiaSettings = true;

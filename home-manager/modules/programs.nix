@@ -17,5 +17,12 @@
     mission-center
     ventoy-full-gtk
     hardinfo2
+    rustdesk
+    mediawriter
+    dino
+    streamlink
+    whatsie
+    resources
+    #quickbms doesn't build
   ];
 }
