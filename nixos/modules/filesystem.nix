@@ -1,38 +1,47 @@
 {
+  boot.supportedFilesystems = ["ntfs"];
   fileSystems = {
     "/mnt/windowsDrive" = {
-      device = "/dev/disk/by-uuid/6b37c152-ce9c-4da9-8fd1-552d45fdb272";
-      fsType = "ntfs";
+      device = "/dev/disk/by-uuid/EA2E0CF42E0CBC17";
+      fsType = "ntfs-3g";
       options = [
-        "users" # Allows any user to mount and unmount
-        "nofail" # Prevent system from failing if this drive doesn't mount
+        "rw"
+        "uid=1000"
+        "gid=1000"
+        "auto"
       ];
     };
 
     "/mnt/m2GamingDrive" = {
-      device = "/dev/disk/by-uuid/1432159d-bcd7-4ffc-912b-7d847105b360";
-      fsType = "ntfs";
+      device = "/dev/disk/by-uuid/724ADD354ADCF737";
+      fsType = "ntfs-3g";
       options = [
-        "users" # Allows any user to mount and unmount
-        "nofail" # Prevent system from failing if this drive doesn't mount
+        "rw"
+        "uid=1000"
+        "gid=1000"
+        "auto"
       ];
     };
 
     "/mnt/dataDrive" = {
-      device = "/dev/disk/by-uuid/72aec4b8-cf7b-4d16-89c4-c18ca67b0288";
-      fsType = "ntfs";
+      device = "/dev/disk/by-uuid/3EC42D6BC42D269D";
+      fsType = "ntfs-3g";
       options = [
-        "users" # Allows any user to mount and unmount
-        "nofail" # Prevent system from failing if this drive doesn't mount
+        "rw"
+        "uid=1000"
+        "gid=1000"
+        "auto"
       ];
     };
 
     "/mnt/hddGamesSmallDrive" = {
-      device = "/dev/disk/by-uuid/46108dda-8428-4216-ae2f-143f81a920df";
-      fsType = "ntfs";
+      device = "/dev/disk/by-uuid/BE44C04D44C00A5B";
+      fsType = "ntfs-3g";
       options = [
-        "users" # Allows any user to mount and unmount
-        "nofail" # Prevent system from failing if this drive doesn't mount
+        "rw"
+        "uid=1000"
+        "gid=1000"
+        "auto"
       ];
     };
   };
