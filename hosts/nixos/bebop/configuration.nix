@@ -4,7 +4,7 @@
     ./hardware-configuration.nix
     ./packages.nix
     ./session-variables.nix
-    ./modules/bundle.nix
+    ../../../nixos-modules/bundle.nix
   ];
 
   nix.settings.experimental-features = [
@@ -12,7 +12,7 @@
     "flakes"
   ];
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "bebop"; # Define your hostname.
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
   time.timeZone = "Europe/Amsterdam";

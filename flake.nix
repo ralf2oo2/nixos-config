@@ -11,11 +11,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
     };
@@ -34,21 +29,11 @@
     }@inputs:
     let
       system = "x86_64-linux";
+      mylib = import ./lib/default.nix { inherit inputs; };
     in
     {
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = {
-          pkgs-stable = import nixpkgs-stable {
-            inherit system;
-            config.allowUnfree = true;
-          };
-          inherit inputs system;
-        };
-
-        modules = [
-          ./nixos/configuration.nix
-          inputs.nixvim.nixosModules.nixvim
-        ];
+      nixosConfigurations = {
+        nixos = mylib.mkSystem ./hosts/nixos/bebop/configuration.nix;
       };
       homeConfigurations.ralf2oo2 = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
