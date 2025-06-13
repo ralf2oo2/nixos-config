@@ -12,6 +12,9 @@
     "flakes"
   ];
 
+  users.users.ralf2oo2.shell = pkgs.zsh;
+  programs.zsh.enable = true;
+
   networking.hostName = "bebop"; # Define your hostname.
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
