@@ -29,11 +29,13 @@
     }@inputs:
     let
       system = "x86_64-linux";
-      mylib = import ./lib/default.nix { inherit inputs; };
+      mylib = import ./lib/default.nix {
+        inherit inputs system;
+      };
     in
     {
       nixosConfigurations = {
-        nixos = mylib.mkSystem ./hosts/nixos/bebop/configuration.nix;
+        bebop = mylib.mkSystem ./hosts/nixos/bebop/configuration.nix;
       };
       homeConfigurations.ralf2oo2 = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
