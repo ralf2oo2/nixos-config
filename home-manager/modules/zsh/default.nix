@@ -1,6 +1,7 @@
 {
   imports = [
     ./p10k/default.nix
+    ./fzf.nix
   ];
   programs.zsh = {
     enable = true;
