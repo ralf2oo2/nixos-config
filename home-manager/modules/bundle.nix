@@ -6,5 +6,6 @@
     ./cinnamon/cinnamon-home.nix
     ./spicetify/spicetify.nix
     ./emulators/emulators-bundle.nix
+    ./zsh/default.nix
 	];
 }
