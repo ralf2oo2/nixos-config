@@ -12,5 +12,6 @@
     ./steam.nix
     ./java.nix
     ./filesystem.nix
+    ./pinta.nix
   ];
 }

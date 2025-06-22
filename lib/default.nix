@@ -12,7 +12,7 @@ in{
           inherit system;
           config.allowUnfree = true;
         };
-        inherit inputs;
+        inherit inputs system;
       };
       modules = [
         entrypoint

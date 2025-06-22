@@ -12,7 +12,7 @@
       }
       {
         name = "fzf-history-search";
-        src = "${pkgs.zsh-fzf-history-search}/share/fzf-history-search";
+        src = "${pkgs.zsh-fzf-history-search}/share/zsh-fzf-history-search";
       }
     ];
   };

@@ -5,6 +5,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
+    nixpkgs-stable-2411.url = "github:nixos/nixpkgs/nixos-24.11";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -25,6 +26,7 @@
       home-manager,
       spicetify-nix,
       git-hooks,
+      nixpkgs-stable-2411,
       ...
     }@inputs:
     let
