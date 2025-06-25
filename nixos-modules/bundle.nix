@@ -13,5 +13,6 @@
     ./java.nix
     ./filesystem.nix
     ./pinta.nix
+    ./appimage.nix
   ];
 }
