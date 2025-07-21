@@ -22,9 +22,17 @@ in{
   mkHome = config:
     home-manager.lib.homeManagerConfiguration {
       pkgs = import nixpkgs {
+        inherit system;
+        config.allowUnfree = true;
+      };
+
+      extraSpecialArgs = {
+        pkgs-stable = import nixpkgs-stable {
           inherit system;
           config.allowUnfree = true;
         };
+      };
+
       modules = [
         config
       ];

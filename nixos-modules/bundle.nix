@@ -12,7 +12,7 @@
     ./steam.nix
     ./java.nix
     ./filesystem.nix
-    ./pinta.nix
+    #./pinta.nix
     ./appimage.nix
   ];
 }
