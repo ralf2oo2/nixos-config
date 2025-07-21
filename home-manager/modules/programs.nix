@@ -28,6 +28,7 @@
     pkgs.p7zip
     pkgs.peazip
     pkgs.blockbench
+    pkgs.pinta
     #pkgs-stable.quickbms #doesn't build
   ];
 }
