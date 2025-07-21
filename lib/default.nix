@@ -25,7 +25,6 @@ in{
         inherit system;
         config.allowUnfree = true;
       };
-
       extraSpecialArgs = {
         pkgs-stable = import nixpkgs-stable {
           inherit system;

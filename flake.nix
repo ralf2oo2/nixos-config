@@ -45,7 +45,13 @@
           config.allowUnfree = true;
         };
         modules = [ ./home-manager/home.nix ];
-        extraSpecialArgs = { inherit inputs; };
+        extraSpecialArgs = { 
+          inherit inputs; 
+          pkgs-stable = import nixpkgs-stable {
+            inherit system;
+            config.allowUnfree = true;
+          };
+        };
       };
 
       #doesn't seem to do anything

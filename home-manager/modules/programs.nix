@@ -25,6 +25,9 @@
     pkgs.resources
     pkgs.melonDS
     pkgs.gpick
-    #quickbms doesn't build
+    pkgs.p7zip
+    pkgs.peazip
+    pkgs.blockbench
+    #pkgs-stable.quickbms #doesn't build
   ];
 }
