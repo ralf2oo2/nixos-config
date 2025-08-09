@@ -15,7 +15,6 @@
     pkgs-stable.chatterino7
     pkgs.dconf-editor
     pkgs.mission-center
-    #ventoy-full-gtk insecure rip
     pkgs.hardinfo2
     pkgs.rustdesk
     pkgs.mediawriter
@@ -29,6 +28,7 @@
     pkgs.peazip
     pkgs.blockbench
     pkgs.pinta
-    #pkgs-stable.quickbms #doesn't build
+    pkgs.obs-studio
+    pkgs.kdePackages.ark
   ];
 }

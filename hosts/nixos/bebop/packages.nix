@@ -31,6 +31,9 @@
     xorg.libXxf86vm
     
     nodejs
+    openvpn
+    zenity
+    openal
   ];
 
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];

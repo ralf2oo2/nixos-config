@@ -17,6 +17,13 @@
 
   networking.hostName = "bebop"; # Define your hostname.
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
+  networking.networkmanager.plugins = with pkgs; [
+    networkmanager-l2tp
+    networkmanager-openconnect
+    networkmanager-openvpn
+    networkmanager-sstp
+    networkmanager-vpnc
+  ];
 
   time.timeZone = "Europe/Amsterdam";
 
