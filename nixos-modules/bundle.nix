@@ -14,5 +14,6 @@
     ./filesystem.nix
     #./pinta.nix
     ./appimage.nix
+    ./wine.nix
   ];
 }
