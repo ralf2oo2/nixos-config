@@ -15,5 +15,6 @@
     #./pinta.nix
     ./appimage.nix
     ./wine.nix
+    ./hyprland
   ];
 }

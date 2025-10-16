@@ -29,6 +29,8 @@
     home-manager
 
     xorg.libXxf86vm
+
+    nix-tree
     
     nodejs
     openvpn

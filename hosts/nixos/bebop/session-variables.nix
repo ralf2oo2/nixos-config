@@ -6,6 +6,11 @@
       pkgs.openal
       pkgs.glfw2
       pkgs.libpulseaudio
+      pkgs.xorg.libXrender
+      pkgs.xorg.libXtst
+      pkgs.xorg.libXi
+      pkgs.xorg.libXcursor
+      pkgs.xorg.libXrandr
     ];
   };
 

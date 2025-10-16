@@ -8,7 +8,7 @@
     pkgs.flameshot
     pkgs.vscode-fhs
     pkgs-stable.jetbrains.idea-community
-    pkgs.anki
+    pkgs-stable.anki
     pkgs.thunderbird
     pkgs.krita
     pkgs.aseprite
@@ -20,7 +20,6 @@
     pkgs.mediawriter
     pkgs.dino
     pkgs.streamlink
-    pkgs.whatsie
     pkgs.resources
     pkgs.melonDS
     pkgs.gpick
@@ -30,5 +29,7 @@
     pkgs.pinta
     pkgs.obs-studio
     pkgs.kdePackages.ark
+    pkgs.imhex
+    pkgs.jetbrains.rider
   ];
 }
