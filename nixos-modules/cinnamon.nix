@@ -3,7 +3,8 @@
   services.xserver = {
     enable = true;
     libinput.enable = true;
-    displayManager.lightdm.enable = true;
+    #displayManager.lightdm.enable = true;  doesnt work with hyprland sadge
+    displayManager.sddm.enable = true;
     desktopManager = {
       cinnamon.enable = true;
     };

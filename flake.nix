@@ -16,6 +16,15 @@
       url = "github:Gerg-L/spicetify-nix";
     };
 
+    quickshell = {
+      # add ?ref=<tag> to track a tag
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+
+      # THIS IS IMPORTANT
+      # Mismatched system dependencies will lead to crashes and other issues.
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     git-hooks.url = "github:cachix/git-hooks.nix";
   };
 
@@ -26,6 +35,7 @@
       home-manager,
       spicetify-nix,
       git-hooks,
+      quickshell,
       nixpkgs-stable-2411,
       ...
     }@inputs:

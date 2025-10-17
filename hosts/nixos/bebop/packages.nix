@@ -50,6 +50,7 @@
       powerline-fonts
       powerline-symbols
       nerd-fonts.symbols-only
+      font-awesome
       mplus-outline-fonts.osdnRelease # japanese font
       roboto
     ];
