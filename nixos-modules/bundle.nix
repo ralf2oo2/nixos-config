@@ -17,5 +17,6 @@
     ./wine.nix
     ./hyprland.nix
     ./discord.nix
+    ./unpackaged/bundle.nix
   ];
 }

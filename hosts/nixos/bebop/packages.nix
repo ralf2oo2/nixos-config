@@ -5,7 +5,6 @@
   };
   environment.systemPackages = with pkgs; [
     firefox
-    discord
 
     libratbag
 
@@ -45,6 +44,7 @@
       jetbrains-mono
       noto-fonts
       noto-fonts-emoji
+      noto-fonts-cjk-sans
       twemoji-color-font
       font-awesome
       powerline-fonts
