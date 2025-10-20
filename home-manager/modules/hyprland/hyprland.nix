@@ -1,4 +1,7 @@
 {
+  imports = [
+    ./hyprpaper/hyprpaper.nix
+  ];
   wayland.windowManager.hyprland = {
     enable = true;
   };
