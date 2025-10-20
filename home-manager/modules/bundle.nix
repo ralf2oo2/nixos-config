@@ -7,5 +7,6 @@
     ./spicetify/spicetify.nix
     ./emulators/emulators-bundle.nix
     ./zsh/default.nix
+    ./hyprland/hyprland.nix
 	];
 }
