@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs, ... }:
 
 pkgs.stdenv.mkDerivation {
   pname = "wayland-push-to-talk";
@@ -10,6 +10,7 @@ pkgs.stdenv.mkDerivation {
     pkgs.libevdev
     pkgs.xdotool
     pkgs.pkg-config
+    pkgs.xorg.libX11
   ];
 
   nativeBuildInputs = [ pkgs.makeWrapper ];
