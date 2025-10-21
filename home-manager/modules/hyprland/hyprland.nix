@@ -47,6 +47,7 @@
     "$terminal" = "kitty";
     "$fileManager" = "nemo";
     "$menu" = "wofi --show drun";
+    "$lockscreen" = "hyprlock";
 
     #################
     ### AUTOSTART ###
@@ -256,6 +257,9 @@
       "$mainMod, R, exec, $menu"
       "$mainMod, P, pseudo," # dwindle
       "$mainMod, J, togglesplit," # dwindle
+
+      "$mainMod, L, exec, $lockscreen"
+
 
       # Move focus with mainMod + arrow keys
       "$mainMod, left, movefocus, l"
