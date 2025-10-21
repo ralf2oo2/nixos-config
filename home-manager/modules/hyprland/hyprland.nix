@@ -3,6 +3,11 @@
     ./hyprpaper/hyprpaper.nix
     ./hyprlock.nix
   ];
+
+  services.swaync = {
+    enable = true;
+  };
+
   wayland.windowManager.hyprland = {
     enable = true;
   };
@@ -58,7 +63,7 @@
 
     # exec-once = $terminal
     # exec-once = nm-applet &
-    exec-once = "quickshell & hyprpaper & firefox & blueman-applet & hyprland-autoname-workspaces";
+    exec-once = "quickshell & hyprpaper & firefox & blueman-applet & hyprland-autoname-workspaces & swaync";
 
     #############################
     ### ENVIRONMENT VARIABLES ###
@@ -260,6 +265,7 @@
 
       "$mainMod, L, exec, $lockscreen"
 
+      "CTRL, PRINT, exec, flameshot gui"
 
       # Move focus with mainMod + arrow keys
       "$mainMod, left, movefocus, l"

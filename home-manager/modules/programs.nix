@@ -5,7 +5,9 @@
     pkgs.mpv
     pkgs.piper
     pkgs.solaar
-    pkgs.flameshot
+    (pkgs.flameshot.overrideAttrs (old: {
+      cmakeFlags = old.cmakeFlags or [ ] ++ [ "-DUSE_WAYLAND_GRIM=ON" ];
+    })) 
     pkgs.vscode-fhs
     pkgs-stable.jetbrains.idea-community
     pkgs-stable.anki

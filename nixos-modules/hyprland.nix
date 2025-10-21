@@ -3,6 +3,10 @@
     enable = true;    
     xwayland.enable = true;
   }; 
+  xdg.portal = {
+    enable = true;
+    extraPortals = [pkgs.xdg-desktop-portal-hyprland];
+  };
   environment.systemPackages = [
     # ... other packages
     pkgs.kitty # required for the default Hyprland config
@@ -10,6 +14,7 @@
     pkgs.hyprpaper
     pkgs.hyprland-autoname-workspaces
     pkgs.hyprlock
+    pkgs.swaynotificationcenter
 
     #move quickshell config to separate file
     (inputs.quickshell.packages.${system}.quickshell.withModules [
