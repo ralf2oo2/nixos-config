@@ -9,6 +9,7 @@
     pkgs.wofi
     pkgs.hyprpaper
     pkgs.hyprland-autoname-workspaces
+    pkgs.hyprlock
 
     #move quickshell config to separate file
     (inputs.quickshell.packages.${system}.quickshell.withModules [
