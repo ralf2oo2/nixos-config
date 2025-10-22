@@ -1,4 +1,4 @@
-{inputs, system,}:
+{inputs, system, pkgs, }:
 let
   inherit (inputs) nixpkgs nixpkgs-stable home-manager;
 in{
@@ -12,7 +12,7 @@ in{
           inherit system;
           config.allowUnfree = true;
         };
-        inherit inputs system;
+        inherit inputs system pkgs;
       };
       modules = [
         entrypoint

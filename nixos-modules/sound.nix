@@ -1,4 +1,9 @@
 {pkgs, ...}:{
+
+  environment.systemPackages = [
+    pkgs.pipewire.jack
+  ];
+
   hardware.pulseaudio.enable = false;
 
   #rtkit is optional but recommended
@@ -20,6 +25,6 @@
     };
 
     # If you want to use JACK  applications, uncomment this
-    # jack.enable = true;
+    jack.enable = true;
   };
 }

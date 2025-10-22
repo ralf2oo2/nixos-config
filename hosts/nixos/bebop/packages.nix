@@ -53,6 +53,9 @@
       font-awesome
       mplus-outline-fonts.osdnRelease # japanese font
       roboto
+      superdirt-start
+      tidal
+      superdirt-install
     ];
 
     fontconfig = {

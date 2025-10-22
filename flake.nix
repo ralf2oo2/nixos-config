@@ -16,6 +16,8 @@
       url = "github:Gerg-L/spicetify-nix";
     };
 
+    tidal-overlay.url = "github:mitchmindtree/tidalcycles.nix";
+
     quickshell = {
       # add ?ref=<tag> to track a tag
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
@@ -37,15 +39,26 @@
       git-hooks,
       quickshell,
       nixpkgs-stable-2411,
+      tidal-overlay,
       ...
     }@inputs:
     let
       system = "x86_64-linux";
+      pkgs = import nixpkgs {
+      inherit system;
+        overlays = [
+          tidal-overlay.overlays.default
+        ];
+        config = {
+          allowUnfree = true;
+        };
+      };
       mylib = import ./lib/default.nix {
-        inherit inputs system;
+        inherit inputs system pkgs;
       };
     in
     {
+      devShells.${system}.tidal = tidal-overlay.devShells.${system}.tidal;
       nixosConfigurations = {
         bebop = mylib.mkSystem ./hosts/nixos/bebop/configuration.nix;
       };
@@ -65,19 +78,19 @@
       };
 
       #doesn't seem to do anything
-      devShells.${system}.default =
-        let
-          pre-commit-check = git-hooks.run {
-            hooks = {
-              nixfmt-rfc-style.enable = true;
-            };
-          };
+      # devShells.${system}.default =
+      #   let
+      #     pre-commit-check = git-hooks.run {
+      #       hooks = {
+      #         nixfmt-rfc-style.enable = true;
+      #       };
+      #     };
 
-        in
-        nixpkgs.mkShellNoCC {
-          packages = [ pre-commit-check.enabledPackages ];
-          shellHook = pre-commit-check.shellHook;
-        };
+      #   in
+      #   nixpkgs.mkShellNoCC {
+      #     packages = [ pre-commit-check.enabledPackages ];
+      #     shellHook = pre-commit-check.shellHook;
+      #   };
 
     };
 
