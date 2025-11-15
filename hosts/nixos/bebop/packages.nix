@@ -38,7 +38,7 @@
     openvpn
     zenity
     openal
-    inputs.sdl_shadercross.packages.${pkgs.system}.default
+    inputs.sdl_shadercross.packages.${stdenv.hostPlatform.system}.default
   ];
 
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];

@@ -41,8 +41,8 @@
             src = pkgs.fetchFromGitHub {
               owner = "libsdl-org";
               repo = "SDL_shadercross";
-              rev = "main";
-              sha256 = "sha256-IMWgIiuhpoydHtpsiDZ34eDyKBWLTtb/hX+sUCb3jOA=";
+              rev = "3e572c3219ea438bff849cebea34f3aad7e1859b";
+              sha256 = "2kpW4AN5eYPY3GxxDpH++nVHtBhSVv5FM2X4I+F2iAU=";
             };
 
             nativeBuildInputs = with pkgs; [
