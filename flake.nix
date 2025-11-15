@@ -28,6 +28,8 @@
     };
 
     git-hooks.url = "github:cachix/git-hooks.nix";
+
+    sdl_shadercross.url = "path:./flakes/shadercross.nix";
   };
 
   outputs =
@@ -40,6 +42,7 @@
       quickshell,
       nixpkgs-stable-2411,
       tidal-overlay,
+      sdl_shadercross,
       ...
     }@inputs:
     let

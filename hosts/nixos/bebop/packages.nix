@@ -11,6 +11,9 @@
     vlc
     qbittorrent
 
+    kdePackages.kdevelop
+    qtcreator
+
     lazygit
     vim
     neofetch
@@ -35,6 +38,7 @@
     openvpn
     zenity
     openal
+    inputs.sdl_shadercross.packages.${pkgs.system}.default
   ];
 
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
@@ -43,7 +47,7 @@
     packages = with pkgs; [
       jetbrains-mono
       noto-fonts
-      noto-fonts-emoji
+      noto-fonts-color-emoji
       noto-fonts-cjk-sans
       twemoji-color-font
       font-awesome
