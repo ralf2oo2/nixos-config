@@ -15,8 +15,9 @@
     #./pinta.nix
     ./appimage.nix
     ./wine.nix
-    ./hyprland.nix
+    # ./hyprland.nix
     ./discord.nix
     ./unpackaged/bundle.nix
+    ./wayfire.nix
   ];
 }
