@@ -33,5 +33,7 @@
     pkgs.kdePackages.ark
     pkgs.imhex
     pkgs.jetbrains.rider
+    pkgs.protonplus
+    pkgs.limo
   ];
 }
