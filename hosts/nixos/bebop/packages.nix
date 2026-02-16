@@ -23,6 +23,8 @@
     nix-output-monitor
     nvd
 
+    quickemu
+
     nixfmt-rfc-style
     nixd
 
@@ -39,6 +41,8 @@
     zenity
     openal
     inputs.sdl_shadercross.packages.${stdenv.hostPlatform.system}.default
+
+    mokuro
   ];
 
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
