@@ -18,6 +18,6 @@
     # ./hyprland.nix
     ./discord.nix
     ./unpackaged/bundle.nix
-    ./wayfire.nix
+    # ./wayfire.nix
   ];
 }

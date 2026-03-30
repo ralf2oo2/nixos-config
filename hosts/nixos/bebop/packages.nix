@@ -35,6 +35,8 @@
     xorg.libXxf86vm
 
     nix-tree
+
+    switcheroo-control
     
     nodejs
     openvpn
