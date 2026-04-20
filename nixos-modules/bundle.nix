@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   imports = [
     ./bootloader.nix
     ./user.nix
@@ -19,5 +19,10 @@
     ./discord.nix
     ./unpackaged/bundle.nix
     # ./wayfire.nix
+    ./wacom.nix
+  ];
+
+  environment.systemPackages = [
+    (pkgs.callPackage ./manatan.nix { })
   ];
 }

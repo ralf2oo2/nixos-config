@@ -66,5 +66,6 @@ buildFHSEnv {
     freetype
     libz
     libGL
+    libx11
   ];
 }
