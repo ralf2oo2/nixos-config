@@ -11,6 +11,8 @@
     pkgs.vscode-fhs
     pkgs-stable.jetbrains.idea-community
     pkgs-stable.anki
+    pkgs-stable.lutris
+    pkgs-stable.bottles
     pkgs.thunderbird
     pkgs.krita
     pkgs.aseprite

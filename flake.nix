@@ -79,22 +79,6 @@
           };
         };
       };
-
-      #doesn't seem to do anything
-      # devShells.${system}.default =
-      #   let
-      #     pre-commit-check = git-hooks.run {
-      #       hooks = {
-      #         nixfmt-rfc-style.enable = true;
-      #       };
-      #     };
-
-      #   in
-      #   nixpkgs.mkShellNoCC {
-      #     packages = [ pre-commit-check.enabledPackages ];
-      #     shellHook = pre-commit-check.shellHook;
-      #   };
-
     };
 
 }

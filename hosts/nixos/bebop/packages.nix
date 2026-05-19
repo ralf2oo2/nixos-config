@@ -16,7 +16,7 @@
 
     lazygit
     vim
-    neofetch
+    fastfetch
     git-credential-oauth
 
     nh
@@ -25,14 +25,14 @@
 
     quickemu
 
-    nixfmt-rfc-style
+    nixfmt
     nixd
 
     killall
     gparted
     home-manager
 
-    xorg.libXxf86vm
+    libxxf86vm
 
     nix-tree
 

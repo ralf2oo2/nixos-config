@@ -10,7 +10,7 @@ pkgs.stdenv.mkDerivation {
     pkgs.libevdev
     pkgs.xdotool
     pkgs.pkg-config
-    pkgs.xorg.libX11
+    pkgs.libX11
   ];
 
   nativeBuildInputs = [ pkgs.makeWrapper ];

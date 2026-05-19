@@ -1,6 +1,6 @@
-{pkgs, ...}:{
+{pkgs-stable, ...}:{
   environment.systemPackages = [ 
-    (pkgs.discord.override {
+    (pkgs-stable.discord.override {
       withOpenASAR=true;
       withVencord=true;
     })
