@@ -37,5 +37,6 @@
     pkgs.jetbrains.rider
     pkgs.protonplus
     pkgs.limo
+    pkgs.kdePackages.kate
   ];
 }

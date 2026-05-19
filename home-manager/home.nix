@@ -19,6 +19,9 @@
 		defaultApplications = {
 			"application/zip" = ["org.gnome.FileRoller.desktop"];
 			"application/vnd.rar" = ["org.gnome.FileRoller.desktop"];
+			"text/plain" = ["org.kde.kwrite.desktop"];
+			"image/png" = ["xviewer.desktop"];
+			"image/jpeg" = ["xviewer.desktop"];
 		};
 	};
 }
