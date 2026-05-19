@@ -38,5 +38,6 @@
     pkgs.protonplus
     pkgs.limo
     pkgs.kdePackages.kate
+    (import ./intellijmc.nix {inherit pkgs;})
   ];
 }
