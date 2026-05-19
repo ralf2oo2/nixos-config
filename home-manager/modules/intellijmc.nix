@@ -2,20 +2,20 @@
 let idea-env = pkgs.buildFHSEnv {
     name = "idea-env";
     targetPkgs = pkgs: (with pkgs; [
-      xorg.libXext
+      libxext
       fontconfig
       libx11
       openal
       glfw2
       libpulseaudio
-      xorg.libXxf86vm
-      xorg.libICE
-      xorg.libSM
-      xorg.libXrender
-      xorg.libXtst
-      xorg.libXi
-      xorg.libXcursor
-      xorg.libXrandr
+      libxxf86vm
+      libice
+      libsm
+      libxrender
+      libxtst
+      libxi
+      libxcursor
+      libxrandr
       libGL
     ]);
     
