@@ -8,6 +8,5 @@
     ./emulators/emulators-bundle.nix
     ./zsh/default.nix
     # ./hyprland/hyprland.nix
-    ./background/background.nix
 	];
 }

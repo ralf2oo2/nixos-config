@@ -20,6 +20,7 @@
     ./unpackaged/bundle.nix
     # ./wayfire.nix
     ./wacom.nix
+    ./background/background.nix
   ];
 
   environment.systemPackages = [
