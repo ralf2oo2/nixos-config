@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, config, ... }: {
   home.sessionVariables.GTK_THEME = "Qogir-Dark";
   
   home.sessionVariables = {
@@ -32,10 +32,13 @@
         gtk-application-prefer-dark-theme=1
       '';
     };
-    gtk4.extraConfig = {
-      Settings = ''
-        gtk-application-prefer-dark-theme=1
-      '';
+    gtk4 = {
+      extraConfig = {
+        Settings = ''
+          gtk-application-prefer-dark-theme=1
+        '';
+      };
+      theme = config.gtk.theme;
     };
   };
 }
