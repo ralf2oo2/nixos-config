@@ -1,0 +1,7 @@
+[Nemo Action]
+Name=Open in Intellij
+Comment=Open in Intellij
+Exec=idea-community "%F"
+Icon-Name=intellij
+Selection=Any
+Extensions=dir

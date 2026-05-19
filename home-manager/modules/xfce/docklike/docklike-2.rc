@@ -1,0 +1,6 @@
+[user]
+showPreviews=true
+showWindowCount=false
+onlyDisplayScreen=true
+onlyDisplayVisible=true
+noWindowsListIfSingle=false
