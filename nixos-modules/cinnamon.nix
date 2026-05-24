@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   services.xserver = {
     enable = true;
@@ -19,10 +19,16 @@
     #ulauncher
   ];
 
+  imports = [inputs.silentSDDM.nixosModules.default];
+
   programs = {
     gnupg.agent = {
       enable = true;
       enableSSHSupport = true;
+    };
+    silentSDDM = {
+      enable = true;
+      theme = "default";
     };
   };
 }
