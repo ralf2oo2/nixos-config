@@ -39,8 +39,6 @@
     openvpn
     zenity
     openal
-
-    mokuro
   ];
 
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];

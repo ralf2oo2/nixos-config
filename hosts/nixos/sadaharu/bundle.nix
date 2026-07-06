@@ -7,7 +7,6 @@
 	../../../nixos-modules/bluetooth.nix
 	../../../nixos-modules/git.nix
 	../../../nixos-modules/cinnamon.nix
-	../../../nixos-modules/bootloader-sadaharu.nix
 	../../../nixos-modules/steam.nix
 	../../../nixos-modules/java.nix
 	../../../nixos-modules/appimage.nix

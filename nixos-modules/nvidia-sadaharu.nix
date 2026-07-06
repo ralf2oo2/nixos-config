@@ -1,9 +1,8 @@
 { config, lib, pkgs, ... } : {
   # Enable OpenGL
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
+    enable32Bit = true;
   };
 
   # Load nvidia driver for Xorg and Wayland
@@ -13,7 +12,7 @@
     modesetting.enable = true;
     powerManagement.enable = false;
     powerManagement.finegrained = false;
-    open = false;
+    open = true;
 
     # Enable the nvidia settings menu, accessable via nvidia-settings
     nvidiaSettings = true;
@@ -22,7 +21,7 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
 
     prime = {
-      sync.enable = true;
+      offload.enable = true;
       intelBusId = "PCI:0:2:0";
       nvidiaBusId = "PCI:2:0:0";
     };

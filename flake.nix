@@ -45,7 +45,6 @@
       quickshell,
       nixpkgs-stable-2411,
       tidal-overlay,
-      sdl_shadercross,
       ...
     }@inputs:
     let

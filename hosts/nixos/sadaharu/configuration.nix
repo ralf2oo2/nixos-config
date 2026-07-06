@@ -4,7 +4,7 @@
     ./hardware-configuration.nix
     ./packages.nix
     ./session-variables.nix
-    ../../../nixos-modules/bundle.nix
+    ./bundle.nix
   ];
 
   nix.settings.experimental-features = [
@@ -15,7 +15,7 @@
   users.users.ralf2oo2.shell = pkgs.zsh;
   programs.zsh.enable = true;
 
-  networking.hostName = "bebop"; # Define your hostname.
+  networking.hostName = "sadaharu"; # Define your hostname.
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
   networking.networkmanager.plugins = with pkgs; [
     networkmanager-l2tp
