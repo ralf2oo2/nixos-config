@@ -69,6 +69,7 @@
       devShells.${system}.tidal = tidal-overlay.devShells.${system}.tidal;
       nixosConfigurations = {
         bebop = mylib.mkSystem ./hosts/nixos/bebop/configuration.nix;
+	sadaharu = mylib.mkSystem ./hosts/nixos/sadaharu/configuration.nix;
       };
       homeConfigurations.ralf2oo2 = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
