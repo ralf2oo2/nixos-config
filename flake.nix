@@ -34,7 +34,7 @@
 
     git-hooks.url = "github:cachix/git-hooks.nix";
 
-    sdl_shadercross.url = "path:./flakes/shadercross/";
+    sdl_shadercross.url = "dir:flakes/shadercross/";
   };
 
   outputs =
