@@ -38,6 +38,7 @@
     pkgs.protonplus
     pkgs.limo
     pkgs.kdePackages.kate
+    pkgs.libGL
     (import ./intellijmc.nix {inherit pkgs;})
   ];
 }

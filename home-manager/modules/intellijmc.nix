@@ -18,6 +18,10 @@ let idea-env = pkgs.buildFHSEnv {
       libxrandr
       libGL
     ]);
+
+    profile = ''
+      export LD_LIBRARY_PATH="${pkgs.lib.makeLibraryPath [ pkgs.libGL ]}:$LD_LIBRARY_PATH"
+    '';
     
     runScript = "idea-oss"; 
   };
