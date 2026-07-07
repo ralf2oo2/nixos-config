@@ -17,10 +17,13 @@ let idea-env = pkgs.buildFHSEnv {
       libxcursor
       libxrandr
       libGL
+      jdk17
     ]);
 
     profile = ''
       export LD_LIBRARY_PATH="${pkgs.lib.makeLibraryPath [ pkgs.libGL ]}:$LD_LIBRARY_PATH"
+
+      export JAVA_HOME="${pkgs.jdk17}"
     '';
     
     runScript = "idea-oss"; 

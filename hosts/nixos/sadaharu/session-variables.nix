@@ -1,6 +1,6 @@
 { lib, pkgs, ... }: {
   environment.sessionVariables = {
-    NH_FLAKE = "/home/ralf2oo2/nixox-config/";
+    NH_FLAKE = "/home/ralf2oo2/nixos-config/";
     LD_LIBRARY_PATH = lib.makeLibraryPath [
       pkgs.libxxf86vm
       pkgs.openal

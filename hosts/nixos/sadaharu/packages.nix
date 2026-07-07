@@ -62,15 +62,15 @@
     fontconfig = {
       defaultFonts = {
         serif = [
-          "Roboto 9"
+          "Roboto"
           "M+ 1mn"
         ];
         sansSerif = [
-          "Roboto 9"
+          "Roboto"
           "M+ 1mn"
         ];
         monospace = [
-          "Jetbrains Mono"
+          "JetBrains Mono"
           "M+ 1c"
         ];
       };

@@ -10,11 +10,13 @@
         cursor-theme = "OpenZone_Fire_Slim";
         gtk-theme = "Qogir-Dark";
         icon-theme = "Papirus-Dark";
+        monospace-font-name = "JetBrains Mono 10";
       };
       "org/gnome/desktop/interface" = {
         cursor-theme = "OpenZone_Fire_Slim";
         gtk-theme = "Qogir-Dark";
         icon-theme = "Papirus-Dark";
+        monospace-font-name = "JetBrains Mono 10";
       };
       "org/cinnamon/theme" = {
         name = "Qogir-Dark";
