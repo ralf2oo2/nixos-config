@@ -21,6 +21,7 @@
     # ./wayfire.nix
     ./wacom.nix
     ./background/background.nix
+    ./reversing/reversing.nix
   ];
 
   environment.systemPackages = [

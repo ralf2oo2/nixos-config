@@ -17,6 +17,11 @@
 	xdg.mimeApps = {
 		enable = true;
 		defaultApplications = {
+
+			"x-scheme-handler/http" = [ "firefox.desktop" ];
+      "x-scheme-handler/https" = [ "firefox.desktop" ];
+      "text/html" = [ "firefox.desktop" ];
+
 			"application/zip" = ["org.gnome.FileRoller.desktop"];
 			"application/vnd.rar" = ["org.gnome.FileRoller.desktop"];
 			"text/plain" = ["org.kde.kwrite.desktop"];

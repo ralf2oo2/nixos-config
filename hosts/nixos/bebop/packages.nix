@@ -42,7 +42,7 @@
     openvpn
     zenity
     openal
-    inputs.sdl_shadercross.packages.${stdenv.hostPlatform.system}.default
+    # inputs.sdl_shadercross.packages.${stdenv.hostPlatform.system}.default
 
     mokuro
   ];

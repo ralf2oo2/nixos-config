@@ -39,6 +39,10 @@
     pkgs.limo
     pkgs.kdePackages.kate
     pkgs.libGL
+    pkgs.audacity
+    pkgs.blender
+    pkgs.qdirstat
+    pkgs.chromium
     (import ./intellijmc.nix {inherit pkgs;})
   ];
 }
