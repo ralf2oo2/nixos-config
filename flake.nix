@@ -55,6 +55,7 @@
     }@inputs:
     let
       system = "x86_64-linux";
+      
       pkgs = import nixpkgs {
       inherit system;
         overlays = [
@@ -71,23 +72,11 @@
     {
       devShells.${system}.tidal = tidal-overlay.devShells.${system}.tidal;
       nixosConfigurations = {
-        bebop = mylib.mkSystem ./hosts/nixos/bebop/configuration.nix;
-	      sadaharu = mylib.mkSystem ./hosts/nixos/sadaharu/configuration.nix;
+        bebop = mylib.mkSystem system ./hosts/nixos/bebop/configuration.nix;
+	      sadaharu = mylib.mkSystem system ./hosts/nixos/sadaharu/configuration.nix;
       };
-      homeConfigurations.ralf2oo2 = home-manager.lib.homeManagerConfiguration {
-        pkgs = import nixpkgs {
-          inherit system;
-          config.allowUnfree = true;
-        };
-        modules = [ ./home-manager/home.nix ];
-        extraSpecialArgs = { 
-          inherit inputs; 
-          pkgs-stable = import nixpkgs-stable {
-            inherit system;
-            config.allowUnfree = true;
-          };
-        };
-      };
+      homeConfigurations."ralf2oo2@bebop" = mylib.mkHome system ./home-manager/home.nix;
+      homeConfigurations."ralf2oo2@sadaharu" = mylib.mkHome system ./home-manager/home.nix;
     };
 
 }
