@@ -23,6 +23,11 @@
 
     tidal-overlay.url = "github:mitchmindtree/tidalcycles.nix";
 
+    nvf = {
+      url = "github:NotAShelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     quickshell = {
       # add ?ref=<tag> to track a tag
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
@@ -45,6 +50,7 @@
       quickshell,
       nixpkgs-stable-2411,
       tidal-overlay,
+      nvf,
       ...
     }@inputs:
     let
@@ -66,7 +72,7 @@
       devShells.${system}.tidal = tidal-overlay.devShells.${system}.tidal;
       nixosConfigurations = {
         bebop = mylib.mkSystem ./hosts/nixos/bebop/configuration.nix;
-	sadaharu = mylib.mkSystem ./hosts/nixos/sadaharu/configuration.nix;
+	      sadaharu = mylib.mkSystem ./hosts/nixos/sadaharu/configuration.nix;
       };
       homeConfigurations.ralf2oo2 = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {

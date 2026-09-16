@@ -15,7 +15,6 @@
     qtcreator
 
     lazygit
-    vim
     fastfetch
     git-credential-oauth
 

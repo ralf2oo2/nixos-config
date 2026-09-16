@@ -12,7 +12,6 @@
     qbittorrent
 
     lazygit
-    vim
     fastfetch
     git-credential-oauth
 

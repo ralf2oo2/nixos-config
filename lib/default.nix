@@ -1,6 +1,6 @@
 {inputs, system, pkgs, }:
 let
-  inherit (inputs) nixpkgs nixpkgs-stable home-manager;
+  inherit (inputs) nixpkgs nixpkgs-stable home-manager nvf;
 in{
 
 # yoinked from https://github.com/vimjoyer/nixconf/blob/main/myLib/default.nix
@@ -15,6 +15,7 @@ in{
         inherit inputs system pkgs;
       };
       modules = [
+        nvf
         entrypoint
       ];
     };

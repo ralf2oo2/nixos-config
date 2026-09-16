@@ -22,6 +22,7 @@
     ./wacom.nix
     ./background/background.nix
     ./reversing/reversing.nix
+    ./terminal-programming/terminal-programming.nix
   ];
 
   environment.systemPackages = [
