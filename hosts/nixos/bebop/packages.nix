@@ -36,6 +36,8 @@
     nix-tree
 
     switcheroo-control
+
+    wget
     
     nodejs
     openvpn

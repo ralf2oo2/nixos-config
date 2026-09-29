@@ -9,7 +9,7 @@
       cmakeFlags = old.cmakeFlags or [ ] ++ [ "-DUSE_WAYLAND_GRIM=ON" ];
     })) 
     pkgs.vscode-fhs
-    pkgs-stable.jetbrains.idea-oss
+    pkgs.jetbrains.idea
     pkgs-stable.anki
     pkgs-stable.lutris
     pkgs-stable.bottles

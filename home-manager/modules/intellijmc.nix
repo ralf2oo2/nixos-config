@@ -26,7 +26,7 @@ let idea-env = pkgs.buildFHSEnv {
       export JAVA_HOME="${pkgs.jdk17}"
     '';
     
-    runScript = "idea-oss"; 
+    runScript = "idea"; 
   };
 in
 pkgs.symlinkJoin {
@@ -38,7 +38,7 @@ pkgs.symlinkJoin {
       name = "intellij-minecraft";
       desktopName = "IntelliJ IDEA (Minecraft FHS)";
       exec = "${idea-env}/bin/idea-env %f";
-      icon = "idea-oss";
+      icon = "idea";
       categories = [ "Development" ];
     }}/share/applications/* $out/share/applications/
   '';
